@@ -1,0 +1,28 @@
+
+
+.header{
+    background-image: url("./img/header-bg.png");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+    &-content{
+        color: white;
+        text-align: center;
+        h1{
+            font-size: 7vmin;
+            margin: 40px 0;
+            
+        }
+     
+        h2{
+            font-size: 4vmin;
+            
+        }
+    }
+}
