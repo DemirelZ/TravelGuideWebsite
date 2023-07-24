@@ -1,6 +1,7 @@
 @import "header";
 @import "navbar";
 @import "colors";
+@import 'events';
 
 
 
@@ -39,7 +40,7 @@ section {
   margin: 80px auto;
 }
 
-.header-content-line {
+.content-line {
   height: 5px;
   width: 150px;
   background-color: $primary-color;
