@@ -5,6 +5,7 @@
 @import "explore";
 @import "tours";
 @import "footer";
+@import "media-queries";
 
 
 
@@ -69,7 +70,7 @@ section {
 
 
 @media only screen and (max-width: 780px){
-
+/*
     .navbar{
 
         &-links{
@@ -81,5 +82,5 @@ section {
             width: 40px;
         }
     }
-
+*/
 }

@@ -1,5 +1,6 @@
 
 @import "colors";
+@import "media-queries";
 
 
 .navbar{
@@ -13,7 +14,6 @@
     padding: 20px;
     color: $text-color;
     
-
     .active{
         color: $primary-color;
     }
@@ -26,6 +26,13 @@
             transform: scale(1.1);
             transition: .5s;
         }
+
+        @include tablet{
+            width: 120px;
+        }
+        @include mobile{
+            width: 100px;
+        }
     }
 
     &-links{
@@ -34,7 +41,6 @@
     li{
         margin: 0 30px;
      
-
         & a:hover{
             color: $primary-color;
             border: 4px solid $primary-color;
@@ -42,10 +48,28 @@
             
         }
     }
+
+    @include tablet{
+        display: none;
     }
+
+    @include mobile{
+        display: none;
+    }
+    }
+
     &-menu-btn{
         display: none;
         cursor: pointer;
+
+        @include tablet{
+            display: block;
+            width: 40px;
+        }
+        @include mobile{
+            display: block;
+            width: 30px;
+        }
     }
     
 }

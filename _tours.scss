@@ -1,4 +1,5 @@
 @import 'colors';
+@import "media-queries";
 
 .tours{
     display: flex;
@@ -21,8 +22,24 @@
         margin-bottom: 50px;
         }
 
+        p{
+            @include tablet{
+                text-align: center;
+            }
+            @include mobile{
+                text-align: center;
+            }
+        }
+
         .btn{
             margin-top: 50px;
+
+            @include tablet{
+                margin-bottom: 20px;
+            }
+            @include mobile{
+                margin-bottom: 20px;
+            }
  
         }
 
@@ -36,9 +53,8 @@
        
 
             img{
-                width: 336px;
-                height: 290px;
-                margin: 20px;
+               
+                
                 border-radius: 10px;
 
 
@@ -47,9 +63,35 @@
                     transition: .3s;
                     cursor: pointer;
                 }
+                @include tablet{
+                    width: 100%;
+                    padding: 10px;
+                    
+                    
+                    
+                }
+                @include mobile{
+                    width: 100%;
+                    padding: 10px;
+                    
+                }
+
             }
+
+           
+        }
+
+        @include tablet{
+            display: block;
+            
+        }
+        @include mobile{
+            display: block;
+            
         }
     }
+
+ 
 
    
 }
