@@ -29,7 +29,7 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 40px;
   color: whitesmoke;
 }
 .navbar .active {
@@ -66,13 +66,37 @@
   padding: 5px;
 }
 @media screen and (max-width: 768px) {
+  .navbar-links li {
+    margin: 30px auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .navbar-links li {
+    margin: 30px auto;
+  }
+}
+@media screen and (max-width: 768px) {
   .navbar-links {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: var(--secondary-color);
+    transition: all 0.5s ease;
+    margin-top: -900px;
   }
 }
 @media screen and (max-width: 560px) {
   .navbar-links {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: var(--secondary-color);
+    transition: all 0.5s ease;
+    margin-top: -900px;
   }
 }
 .navbar-menu-btn {
@@ -89,6 +113,16 @@
   .navbar-menu-btn {
     display: block;
     width: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .navbar {
+    padding: 20px 20px;
   }
 }
 
@@ -207,6 +241,7 @@
 }
 .tours-content-right img {
   border-radius: 10px;
+  margin: 20px;
 }
 .tours-content-right img:hover {
   transform: scale(1.1);
@@ -308,18 +343,15 @@ section {
   color: #fc036b;
 }
 
-@media only screen and (max-width: 780px) {
-  /*
-      .navbar{
-
-          &-links{
-              display: none;
-          }
-
-          &-menu-btn{
-              display: block;
-              width: 40px;
-          }
-      }
-  */
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    border-bottom-right-radius: 200px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .mobile-menu {
+    border-bottom-right-radius: 200px;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

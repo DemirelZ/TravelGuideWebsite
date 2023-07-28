@@ -69,18 +69,24 @@ section {
 
 
 
-@media only screen and (max-width: 780px){
-/*
-    .navbar{
-
-        &-links{
-            display: none;
-        }
-
-        &-menu-btn{
-            display: block;
-            width: 40px;
-        }
-    }
-*/
+@include tablet{
+  
+  .mobile-menu{
+    border-bottom-right-radius: 200px ;
+    margin-top: 0;
+  }
 }
+@include mobile{
+  .mobile-menu{
+    border-bottom-right-radius: 200px ;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
